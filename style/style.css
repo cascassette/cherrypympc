@@ -1,0 +1,136 @@
+/* General stuff */
+body, table, div, p {
+	background-color: black;
+	color: #777;
+}
+body.main { background: black url(/img/mpcbgcherrypy1.jpg); }
+table { border: none; }
+a img { border: none; }
+div#controlbar {
+	background: none;
+	text-align: center;
+}
+
+/* Current song info */
+h1, h2 { text-align: center; }
+h1, h2 i { color: white; }
+h3 {
+	font-family: monospace;
+	display: inline;
+}
+
+/* Playlist table */
+table.playlist td {
+	color: #999;
+	margin-left: 10px;
+	cursor: pointer;
+}
+table.playlist th { text-align: left; }
+table.playlist tr:hover:not(.header) { background-color: #333;}
+table.playlist tr:hover td { color: #ddd; }
+td.tracklen {
+	font-family: monospace;
+	text-align: right;
+}
+tr.currentsong td {
+	font-weight: bold;
+	color: white;
+}
+tr.currentsong { background-color: #555; }
+
+/* File, Album, Artist/album tree list */
+ul.tree, ul.tree ul {
+	list-style-type: none;
+	background: url(/img/vline.png) repeat-y;
+	margin: 0;
+	padding: 0;
+}
+ul.tree li > ul { display: none; }
+ul.tree li:hover > ul { display: list-item; }
+ul.tree ul {
+	margin-left: 10px;
+}
+ul.tree li {
+	margin: 0px;
+	padding: 0 12px;
+	line-height: 20px;
+	background: url(/img/node.png) no-repeat;
+}
+ul.tree li.last { background: black url(/img/lastnode.png) no-repeat; }
+/*ul.tree li a img { display: none; }
+ul.tree li:hover a img { display: inline; }*/
+
+/* Tab stuff */
+ul.tab {
+	display: inline;
+	width: 100%;
+}
+ul.tab li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 3px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	height: 30px;
+	background-color: #555;
+}
+ul.tab li a img { display: inline-block; }
+ul.tab li a { text-decoration: none; padding-right: 12px; }
+ul.tab li a:link { color: white; }
+ul.tab li a:visited { color: white; }
+ul.tab li a:active { color: white; }
+ul.tab li a:hover { color: white; background-color: #222; }
+ul.tab li.r { margin-left: 40%; }
+ul.tab li.r a { padding-left: 8px; padding-right: 10px; }
+
+/* Progress bar */
+div#progressbarcontainer, div#progressbarcontainer > div { cursor: pointer; }
+div#progressbarcontainer {
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+	border: 3px solid #444;
+	background-color: #ddd;
+	margin-top: 4px;
+	margin-bottom: 12px;
+}
+div#progressind {
+	border: 1px solid #888;
+	display: inline;
+	width: 5px;
+	background-color: #eee;
+	margin: 0px;
+}
+div#progressbar {
+	border: none;
+	display: inline-block;
+	width: 0px;
+	background: #888;
+	margin: 0px;
+}
+div#progressbartextlayer {
+	background: none;
+	position: absolute;
+	display: inline;
+	width: 400px;
+	text-align: center;
+	color: black;
+}
+
+/* Copyright / link */
+div#copyright {
+	color: #ccc;
+	text-align: right;
+	font-size: small;
+	background: none;
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+}
+div#copyright a { text-decoration: none; }
+div#copyright a:link { color: #ddd; }
+div#copyright a:visited { color: #ddd; }
+div#copyright a:active { color: white; }
+div#copyright a:hover { color: white; text-decoration: underline; }

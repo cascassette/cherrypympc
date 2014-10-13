@@ -1,0 +1,6 @@
+runscreens
+mpclib.py
+mpclib.pyc
+*.pyc
+js/MochiKit.js
+*.xcf
